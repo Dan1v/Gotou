@@ -4,6 +4,8 @@ import ingCivil from "../assets/images/ingCivil.jpg";
 import diseGraf from "../assets/images/diseGraf.jpg";
 import testVocacional from "../assets/images/testVocacional.jpg";
 import claseVirtual from "../assets/images/claseVirtual.jpg";
+import psicoreu from "../assets/images/psicoreu.jpg";
+import profreu from "../assets/images/profesireu.jpg";
 
 const Landing = () => {
     return (
@@ -57,15 +59,19 @@ const Landing = () => {
                 <h2>Cursos introductorios a carreras</h2>
             </div>
         </div>
-        <div className="orientacion">
-            <div>
-
-            </div>
-            <div>
-                
-            </div>
-
+        <div class="orientacion">
+        <div class="psicoprof">
+            <img src={psicoreu}/>
+            <h2>Contactate con nuestros psicólogos</h2>
+            <h3>Nuestros psicólogos te brindará una mejora ayuda para llegar a tu carrera ideal</h3>
         </div>
+        <div class="psicoprof">
+            <img src={profreu}/>
+            <h2>Contactate con nuestros profesionales de distintas carreras</h2>
+            <h3>Nuestro profesionales te brindarán mas información acerca de sus carreras y te contarán sus experiencias.</h3>
+        </div>
+    </div>
+        
     </div>
     
          </>
