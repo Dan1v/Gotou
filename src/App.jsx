@@ -3,6 +3,7 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import AboutUs from "./pages/Aboutus";
+import Log from "./pages/Login";
 
 
 export default function App() {
@@ -13,7 +14,8 @@ export default function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Landing />} />
           <Route path="sobre-nosotros" element={<AboutUs />} />
-          <Route path="*" element={<div>Error 404</div>} />
+          <Route path="iniciar-sesion" element={<Log />} />
+          <Route path="*" element={<div>PROXIMAMENTE :D</div>} />
         </Route>
         {/* <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
