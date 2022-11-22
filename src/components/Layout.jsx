@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
 import Loguito from "../assets/images/Loguito.jpeg";
+import "../pages/Login.css";
 
 function Layout() {
   return (
