@@ -1,91 +1,81 @@
 import React from "react";
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-import Loguito from "../assets/images/Loguito.jpeg";
-import Dani from "../assets/images/Daniel Velarde.jpeg";
-import Andrea from "../assets/images/Andrea.jpeg";
-import Diego from "../assets/images/Diego.jpeg";
-import Marlon from "../assets/images/Marlon.jpeg";
-import Sebastian from "../assets/images/Sebastian.jpeg";
-const AboutUs = () => {
-  return (
-    <>
-    
-        <section className="Gotou">
-            <img className="Logo_about" src={Loguito} alt="GoToU Logo"/>
-              <div className="parrafo1">
-                <h1>Sobre Go To U</h1>
-                <p id="p1">Bienvenido a GoToU, somos una página enfocada en tratar de apoyarte</p>
-                <p id="p1">con cualquier duda que tengas respecto a tu futura carrera profesional.</p>
-                <p id="p1">Somos un grupo de estudiantes que pensamos en esta idea, ya que varios </p>
-                <p id="p1">pasamos por lo mismo en algún momento de nuestra vida.</p>
-              </div>
-        </section>
+import cs from "../assets/images/cs.jpg";
+import ingCivil from "../assets/images/ingCivil.jpg";
+import diseGraf from "../assets/images/diseGraf.jpg";
+import testVocacional from "../assets/images/testVocacional.jpg";
+import claseVirtual from "../assets/images/claseVirtual.jpg";
+import psicoreu from "../assets/images/psicoreu.jpg";
+import profreu from "../assets/images/profesireu.jpg";
 
-      <section className="Participantes">
-            <h1 className="t1">Nuestros Creadores</h1>
-            <div className="Integrantes">
-                <div className="creador">
-                    <img alt= "Daniel" src={Dani}/>
-                    <div className="texto_integrantes">
-                        <p>Fundador</p>
-                        <h3>Daniel Velarde</h3>
-                        <ul className="Redes_Sociales">
-                            <li className="Boton_RS"><a href="#" class="fa fa-facebook"></a></li>
-                            <li className="Boton_RS"><a href="#" class="fa fa-twitter"></a></li>
-                        </ul>
-                    </div>    
-                </div>
-                <div className="creador">
-                    <img alt="Andrea" src={Andrea}/>
-                    <div className="texto_integrantes">
-                        <p>Fundador</p>
-                        <h3>Andrea Garcia</h3>
-                        <ul className="Redes_Sociales">
-                            <li className="Boton_RS"><a href="#" className="fa fa-facebook"></a> <i className="fa fa-facebook"></i></li>
-                            <li className="Boton_RS"><a href="#" className="fa fa-twitter"></a></li>
-                        </ul>
-                    </div>    
-                </div>
-                <div className="creador">
-                <img alt= "Diego" src={Diego}/>
+const Landing = () => {
+    return (
+      <>
+        <header className="main-image">
+            <h1>Go To U</h1>
+            <h2>Tu futuro es importante, tu futuro nos importa</h2>
+            <h3>Somos una página que trata de ayudar a los jóvenes a escoger su carrera ideal</h3>
+        </header>
+   
 
-                    <div className="texto_integrantes"/>
-                        <p>Fundador</p>
-                        <h3>Diego Lucana</h3>
-                        <ul className="Redes_Sociales">
-                            <li className="Boton_RS"><a href="#" className="fa fa-facebook"></a></li>
-                            <li className="Boton_RS"><a href="#" className="fa fa-twitter"></a></li>
-                        </ul>
-                </div>  
-                <div className="creador">
-                    <img alt="Marlon Foto" src={Marlon}/>
-                    <div className="texto_integrantes">
-                        <p>Fundador</p>
-                        <h3>Marlon Llaguento</h3>
-                        <ul className="Redes_Sociales">
-                            <li className="Boton_RS"><a href="#" className="fa fa-facebook"></a></li>
-                            <li className="Boton_RS"><a href="#" className="fa fa-twitter"></a></li>
-                        </ul>
-                    </div>    
+        <div className="carreras">
+            <div className="text-carreras">
+             <h2>CARRERAS</h2>
+             <h3>Encuentra aquí la información de la carrera de tu interés</h3>
+            
+        </div>
+        <div className="image-carreras">
+            <div >
+                <img alt="Ciencias de la computación" src={cs}/>
+                <div className="text">
+                   <a href="#"> <h2>Ciencias de la Computación</h2>
+                    <h3>Profundizaras en la web, la inteligencia artificial, el Big Data y más</h3></a>
                 </div>
-                <div className="creador">
-                    <img alt="Sebastian"src={Sebastian}/>
-                    <div className="texto_integrantes">
-                        <p>Fundador</p>
-                        <h3>Sebastian Osorio</h3>
-                        <ul className="Redes_sociales">
-                            <li className="Boton_RS"><a href="#" className="fa fa-facebook"></a></li>
-                            <li className="Boton_RS"><a href="#" className="fa fa-twitter"></a></li>
-                        </ul>
-                    </div>    
+                
+            </div>
+            <div >
+                <img  alt="Ingienería civil" src={ingCivil}/>
+                <div className="text">
+                    <a href="#"> <h2>Inginería Civil</h2>
+                    <h3>Entenderás el proceso que conlleva edificar una casa o un rascacielos</h3></a>
+                </div>
+            </div>
+            <div >
+                <img alt="Diseño gráfico" src={diseGraf}/>
+                <div className="text">
+                    <a href="#"> <h2>Diseño Grafico</h2>
+                    <h3>Pondrás aprueba toda tu creatividad para hacer arte en cada diseño</h3></a>
                 </div> 
-                </div>
-                           
-        </section> 
+            </div>
+            
+        </div>
 
-
-    </>
+        <div className="opciones-test-cursos">
+            <div>
+                <img src={testVocacional}/>
+                <h2>Test vocacional</h2>
+            </div>
+            <div>
+                <img src={claseVirtual}/>
+                <h2>Cursos introductorios a carreras</h2>
+            </div>
+        </div>
+        <div class="orientacion">
+        <div class="psicoprof">
+            <img src={psicoreu}/>
+            <h2>Contactate con nuestros psicólogos</h2>
+            <h3>Nuestros psicólogos te brindará una mejora ayuda para llegar a tu carrera ideal</h3>
+        </div>
+        <div class="psicoprof">
+            <img src={profreu}/>
+            <h2>Contactate con nuestros profesionales de distintas carreras</h2>
+            <h3>Nuestro profesionales te brindarán mas información acerca de sus carreras y te contarán sus experiencias.</h3>
+        </div>
+    </div>
+        
+    </div>
+    
+         </>
   );
 };
 
-export default AboutUs;
+export default Landing;
