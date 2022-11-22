@@ -47,7 +47,8 @@ const AboutUs = () => {
                     </div>    
                 </div>
                 <div className="creador">
-                    <img alt= "Diego" src={Diego}/>
+                <img alt= "Diego" src={Diego}/>
+
                     <div className="texto_integrantes"/>
                         <p>Fundador</p>
                         <h3>Diego Lucana</h3>
@@ -55,8 +56,7 @@ const AboutUs = () => {
                             <li className="Boton_RS"><a href="#" className="fa fa-facebook"></a></li>
                             <li className="Boton_RS"><a href="#" className="fa fa-twitter"></a></li>
                         </ul>
-                    </div>    
-                </div>
+                </div>  
                 <div className="creador">
                     <img alt="Marlon Foto" src={Marlon}/>
                     <div className="texto_integrantes">
@@ -78,7 +78,9 @@ const AboutUs = () => {
                             <li className="Boton_RS"><a href="#" className="fa fa-twitter"></a></li>
                         </ul>
                     </div>    
-                </div>            
+                </div> 
+                </div>
+                           
         </section> 
 
 
