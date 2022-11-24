@@ -83,6 +83,22 @@ const AboutUs = () => {
                            
         </section> 
 
+ <section class="Team-Video">
+        
+        <h2>SOBRE EL PRODUCTO</h2>
+        
+        <div class="Team-Video_SharkyTeam-video">
+            <iframe
+                src="https://www.youtube.com/embed/5W2Dcf9yQrs"
+                title="Video promocional - GoToU"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+
+            </iframe>
+        </div>
+
+    </section>
+
 
     </>
   );
