@@ -443,4 +443,56 @@ justify-content: center;
   border: 1px;
 }
 
+/*Video*/
+
+.Team-Video h2{
+  color: white;
+  text-align: center; 
+  background: black; 
+  margin: 0 0 25px; 
+  overflow: hidden; 
+  padding: 20px; 
+  border-radius: 35px 0px 35px 0px; 
+  -moz-border-radius: 35px 0px 35px 0px; 
+  -webkit-border-radius: 35px 0px 35px 0px; 
+  border: 2px solid red;
+}
+
+
+.Team-Video{
+  color: black;
+  background-color: #E57373;
+  padding: 10px;
+}
+
+.Team-Video_SharkyTeam-video{
+  display: flex;
+  justify-content: center;
+}
+.Team-Video_SharkyTeam-video iframe{
+
+  width : 699px;
+  height: 393px;
+  border-radius:20px;
+  border: 15px solid red;
+}
+
+@media screen and (max-width: 800px) {
+  .Team-Video_SharkyTeam-video{
+      height: 0;
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      position: relative;
+  }
+
+  .Team-Video_SharkyTeam-video iframe, .Team-Video_SharkyTeam-video object, .Team-Video_SharkyTeam-video embed {
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+  }
+}
+
 
